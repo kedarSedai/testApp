@@ -88,7 +88,7 @@ const QuoteForm = () => {
 
     if (formData.contactMethod === 'phone' && !formData.phone.trim()) {
       newErrors.phone = 'Phone is required';
-    } else if (formData.phone && !/^[\d\s\-\(\)]+$/.test(formData.phone)) {
+    } else if (formData.phone && !/^[\d\s\-()]+$/.test(formData.phone)) {
       newErrors.phone = 'Please enter a valid phone number';
     }
 
