@@ -1,0 +1,280 @@
+.auto-insurance {
+  background: linear-gradient(180deg, #f0f6fc 0%, #e8f1f9 100%);
+  padding: 120px 20px;
+  transition: background 0.3s ease;
+  border-top: 1px solid rgba(26, 84, 144, 0.1);
+}
+
+:root.dark .auto-insurance {
+  background: linear-gradient(180deg, #0f1520 0%, #1a2332 100%);
+  border-top-color: rgba(255, 215, 0, 0.1);
+}
+
+.auto-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.auto-card {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 15px 50px rgba(26, 84, 144, 0.12);
+  width: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(26, 84, 144, 0.05);
+}
+
+:root.dark .auto-card {
+  background: #1a2332;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 215, 0, 0.1);
+}
+
+.auto-card:hover {
+  box-shadow: 0 20px 60px rgba(26, 84, 144, 0.15);
+  transform: translateY(-4px);
+}
+
+:root.dark .auto-card:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.auto-image {
+  display: flex;
+  justify-content: center;
+}
+
+.auto-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(26, 84, 144, 0.15);
+}
+
+:root.dark .auto-image img {
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.1);
+}
+
+.auto-content-inner h2 {
+  font-size: 2rem;
+  color: #1a5490;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+:root.dark .auto-content-inner h2 {
+  color: #ffd700;
+}
+
+.auto-content-inner > p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+:root.dark .auto-content-inner > p {
+  color: #e8e8e8;
+}
+
+.coverage-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.coverage-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+:root.dark .coverage-item {
+  background: #0f1520;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.coverage-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.coverage-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.coverage-item h4 {
+  color: #1a5490;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+:root.dark .coverage-item h4 {
+  color: #ffd700;
+}
+
+.coverage-item p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+:root.dark .coverage-item p {
+  color: #d0d0d0;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+:root.dark .feature-item {
+  color: #d0d0d0;
+}
+
+.feature-item .check {
+  color: #1a5490;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+:root.dark .feature-item .check {
+  color: #ffd700;
+}
+
+.cta-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.cta-section .btn-primary,
+.cta-section .btn-secondary {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.cta-section .btn-primary {
+  background: #1a5490;
+  color: white;
+}
+
+.cta-section .btn-primary:hover {
+  background: #144075;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 84, 144, 0.3);
+}
+
+.cta-section .btn-secondary {
+  background: transparent;
+  color: #1a5490;
+  border: 2px solid #1a5490;
+}
+
+.cta-section .btn-secondary:hover {
+  background: #1a5490;
+  color: white;
+}
+
+@media (max-width: 968px) {
+  .auto-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .auto-content-inner h2 {
+    font-size: 1.75rem;
+  }
+
+  .coverage-options {
+    grid-template-columns: 1fr;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .auto-insurance {
+    padding: 60px 15px;
+  }
+
+  .auto-card {
+    padding: 1.5rem;
+  }
+
+  .auto-content-inner h2 {
+    font-size: 1.5rem;
+  }
+
+  .coverage-options {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .coverage-item {
+    padding: 1rem;
+  }
+
+  .coverage-item h4 {
+    font-size: 0.95rem;
+  }
+
+  .coverage-item p {
+    font-size: 0.85rem;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .feature-item {
+    font-size: 0.9rem;
+  }
+
+  .cta-section {
+    flex-direction: column;
+  }
+
+  .cta-section .btn-primary,
+  .cta-section .btn-secondary {
+    width: 100%;
+  }
+}

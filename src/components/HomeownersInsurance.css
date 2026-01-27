@@ -1,0 +1,324 @@
+.homeowners-insurance {
+  background: linear-gradient(180deg, #f0f6fc 0%, #e8f1f9 100%);
+  padding: 120px 20px;
+  transition: background 0.3s ease;
+  border-top: 1px solid rgba(26, 84, 144, 0.1);
+}
+
+:root.dark .homeowners-insurance {
+  background: linear-gradient(180deg, #0f1520 0%, #1a2332 100%);
+  border-top-color: rgba(255, 215, 0, 0.1);
+}
+
+.homeowners-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  padding: 0 20px;
+}
+
+.homeowners-card {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 15px 50px rgba(26, 84, 144, 0.12);
+  max-width: 1000px;
+  width: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(26, 84, 144, 0.05);
+}
+
+:root.dark .homeowners-card {
+  background: #1a2332;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 215, 0, 0.1);
+}
+
+.homeowners-card:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.homeowners-image {
+  display: flex;
+  justify-content: center;
+}
+
+.homeowners-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(26, 84, 144, 0.15);
+}
+
+.homeowners-content h2 {
+  font-size: 2rem;
+  color: #1a5490;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+:root.dark .homeowners-content h2 {
+  color: #ffd700;
+}
+
+.homeowners-content > p:first-of-type {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+:root.dark .homeowners-content > p:first-of-type {
+  color: #e8e8e8;
+}
+
+.homeowners-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #444;
+  padding: 0.5rem 0;
+}
+
+:root.dark .highlight-item {
+  color: #e0e0e0;
+}
+
+.highlight-icon {
+  color: #1a5490;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+:root.dark .highlight-icon {
+  color: #ffd700;
+}
+
+.homeowners-mission {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 1rem 0;
+  font-style: italic;
+  border-left: 4px solid #1a5490;
+  padding-left: 1rem;
+}
+
+:root.dark .homeowners-mission {
+  color: #d0d0d0;
+  border-left-color: #ffd700;
+}
+
+.homeowners-cta {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1a5490 0%, #0d3a70 100%);
+  color: white;
+  padding: 0.85rem 1.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(26, 84, 144, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(26, 84, 144, 0.3);
+}
+
+:root.dark .btn-primary {
+  background: linear-gradient(135deg, #2d7bc4 0%, #1a5490 100%);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15);
+}
+
+:root.dark .btn-primary:hover {
+  background: linear-gradient(135deg, #1a5490 0%, #0d3a70 100%);
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.25);
+}
+
+/* Coverage Section */
+.coverage-section {
+  margin-top: 4rem;
+}
+
+.coverage-title {
+  font-size: 2rem;
+  color: #1a5490;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+:root.dark .coverage-title {
+  color: #ffd700;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coverage-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+:root.dark .coverage-card {
+  background: #1a2332;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 215, 0, 0.08);
+}
+
+.coverage-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+:root.dark .coverage-card:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+.coverage-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.coverage-card h4 {
+  font-size: 1.5rem;
+  color: #1a5490;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+:root.dark .coverage-card h4 {
+  color: #ffd700;
+}
+
+.coverage-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+:root.dark .coverage-description {
+  color: #d0d0d0;
+}
+
+.coverage-features {
+  list-style: none;
+  text-align: left;
+  margin: 1.5rem 0;
+  flex-grow: 1;
+}
+
+.coverage-features li {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:root.dark .coverage-features li {
+  color: #e0e0e0;
+}
+
+.coverage-features li::before {
+  content: '✓';
+  color: #1a5490;
+  font-weight: 700;
+}
+
+:root.dark .coverage-features li::before {
+  color: #ffd700;
+}
+
+@media (max-width: 900px) {
+  .homeowners-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .homeowners-content h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .homeowners-highlights {
+    text-align: center;
+  }
+
+  .homeowners-mission {
+    text-align: center;
+  }
+
+  .homeowners-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .homeowners-insurance {
+    padding: 60px 15px;
+  }
+
+  .homeowners-card {
+    padding: 1.5rem;
+  }
+
+  .homeowners-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .coverage-title {
+    font-size: 1.5rem;
+  }
+
+  .coverage-card {
+    padding: 1.5rem;
+  }
+
+  .coverage-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

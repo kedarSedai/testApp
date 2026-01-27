@@ -1,0 +1,385 @@
+.health-insurance {
+  background: linear-gradient(180deg, #f0f6fc 0%, #e8f1f9 100%);
+  padding: 120px 20px;
+  transition: background 0.3s ease;
+  border-top: 1px solid rgba(26, 84, 144, 0.1);
+}
+
+:root.dark .health-insurance {
+  background: linear-gradient(180deg, #0f1520 0%, #1a2332 100%);
+  border-top-color: rgba(255, 215, 0, 0.1);
+}
+
+.health-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  padding: 0 20px;
+}
+
+.health-card {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 15px 50px rgba(26, 84, 144, 0.12);
+  max-width: 1000px;
+  width: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(26, 84, 144, 0.05);
+}
+
+:root.dark .health-card {
+  background: #1a2332;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 215, 0, 0.1);
+}
+
+.health-card:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.health-image {
+  display: flex;
+  justify-content: center;
+}
+
+.health-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(26, 84, 144, 0.15);
+}
+
+:root.dark .health-image img {
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+}
+
+.health-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a5490 0%, #0d3a70 100%);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+:root.dark .health-badge {
+  background: linear-gradient(135deg, #2d7bc4 0%, #1a5490 100%);
+  box-shadow: 0 8px 24px rgba(26, 84, 144, 0.15);
+}
+
+.health-content h2 {
+  font-size: 2rem;
+  color: #1a5490;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+:root.dark .health-content h2 {
+  color: #ffd700;
+}
+
+.health-content > p:first-of-type {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+:root.dark .health-content > p:first-of-type {
+  color: #e8e8e8;
+}
+
+.health-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+:root.dark .highlight-item {
+  color: #e8e8e8;
+}
+
+.highlight-icon {
+  color: #1a5490;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+:root.dark .highlight-icon {
+  color: #ffd700;
+}
+
+.health-mission {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 1rem 0;
+  font-style: italic;
+  border-left: 4px solid #1a5490;
+  padding-left: 1rem;
+}
+
+:root.dark .health-mission {
+  color: #d0d0d0;
+  border-left-color: #ffd700;
+}
+
+.health-cta {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1a5490 0%, #0d3a70 100%);
+  color: white;
+  padding: 0.85rem 1.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(26, 84, 144, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(26, 84, 144, 0.3);
+}
+
+:root.dark .btn-primary {
+  background: linear-gradient(135deg, #2d7bc4 0%, #1a5490 100%);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15);
+}
+
+:root.dark .btn-primary:hover {
+  background: linear-gradient(135deg, #1a5490 0%, #0d3a70 100%);
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.25);
+}
+
+/* Dental & Vision Section */
+.dental-vision-section {
+  margin-top: 4rem;
+}
+
+.dental-vision-title {
+  font-size: 2rem;
+  color: #1a5490;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+:root.dark .dental-vision-title {
+  color: #ffd700;
+}
+
+.dental-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dv-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+:root.dark .dv-card {
+  background: #1a2332;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 215, 0, 0.08);
+}
+
+.dv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+:root.dark .dv-card:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+.dv-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.dv-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.dv-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dv-card:hover .dv-image img {
+  transform: scale(1.05);
+}
+
+.dv-card h4 {
+  font-size: 1.5rem;
+  color: #1a5490;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+:root.dark .dv-card h4 {
+  color: #ffd700;
+}
+
+.dv-features {
+  list-style: none;
+  text-align: left;
+  margin: 1.5rem 0;
+  flex-grow: 1;
+}
+
+.dv-features li {
+  color: #333;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:root.dark .dv-features li {
+  color: #e8e8e8;
+}
+
+.dv-features li::before {
+  content: '✓';
+  color: #1a5490;
+  font-weight: 700;
+}
+
+:root.dark .dv-features li::before {
+  color: #ffd700;
+}
+
+.dv-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+:root.dark .dv-description {
+  color: #b0b0b0;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #1a5490;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+  margin-top: auto;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ffed4e 0%, #fff44f 100%);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+  .health-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .health-content h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .health-highlights {
+    text-align: center;
+  }
+
+  .health-mission {
+    text-align: center;
+  }
+
+  .health-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dental-vision-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .health-insurance {
+    padding: 60px 15px;
+  }
+
+  .health-card {
+    padding: 1.5rem;
+  }
+
+  .health-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .dental-vision-title {
+    font-size: 1.5rem;
+  }
+
+  .dv-card {
+    padding: 1.5rem;
+  }
+
+  .dv-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
