@@ -17,19 +17,15 @@ const AboutUs = ({ scrollToSection }) => {
               </p>
               <div className="about-highlights">
                 <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
                   <span>Expert insurance guidance tailored to your needs</span>
                 </div>
                 <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
                   <span>Access to multiple top-rated carriers</span>
                 </div>
                 <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
                   <span>Personalized service and support</span>
                 </div>
                 <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
                   <span>Transparent pricing and honest advice</span>
                 </div>
               </div>

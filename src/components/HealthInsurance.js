@@ -2,9 +2,6 @@ import React from 'react';
 import './HealthInsurance.css';
 
 const HealthInsurance = ({ scrollToSection }) => {
-  const handleGetQuote = () => {
-    scrollToSection && scrollToSection('quote');
-  };
 
   return (
     <section id="health" className="health-insurance">
