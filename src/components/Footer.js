@@ -50,6 +50,9 @@ const Footer = () => {
                   {address}
                 </a>
               </li>
+              <li>
+                <strong>Business Hours:</strong> Mon-Fri: 9:30 AM - 4:30 PM
+              </li>
             </ul>
           </div>
 
