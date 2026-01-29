@@ -12,27 +12,27 @@ const AboutUs = ({ scrollToSection }) => {
             </div>
             <div className="about-content">
               <h2>About Your Insurance Services</h2>
-              <p>
-                We're an <strong>independent insurance agency</strong> dedicated to helping individuals and families protect what matters most.
-              </p>
-              <div className="about-highlights">
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Expert insurance guidance tailored to your needs</span>
-                </div>
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Access to multiple top-rated carriers</span>
-                </div>
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Personalized service and support</span>
-                </div>
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Transparent pricing and honest advice</span>
-                </div>
-              </div>
+             <p className="text-gray-300 leading-relaxed">
+  Your Insurance Services is an independent insurance agency specializing in
+  <span className="font-medium text-gray-100">
+    {" "}Property &amp; Casualty coverage
+  </span>, including auto, homeowners, and bundled insurance solutions designed to
+  protect what matters most. We also offer
+  <span className="font-medium text-gray-100">
+    {" "}health insurance plans
+  </span>, along with
+  <span className="font-medium text-gray-100">
+    {" "}dental and vision coverage
+  </span>, to support your overall financial and personal well-being. By working
+  with
+  <span className="font-medium text-white">
+    {" "}multiple top-rated carriers
+  </span>, we provide clear guidance, competitive options, and personalized
+  service—making insurance
+  <span className="font-medium text-white">
+    {" "}simple, transparent
+  </span>, and tailored to your unique needs.
+</p>
               <p className="about-mission">
                 We believe insurance should be simple, personal, and dependable. Whether bundling coverage, enrolling in health plans, or reviewing policies—we provide honest advice and long-term support.
               </p>
