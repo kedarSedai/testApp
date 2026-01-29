@@ -72,6 +72,20 @@ const QuoteForm = () => {
       newErrors.zipCode = 'Please enter a valid zip code';
     }
 
+    // Email (required + format)
+if (!formData.email.trim()) {
+  newErrors.email = 'Email is required';
+} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+  newErrors.email = 'Please enter a valid email';
+}
+
+// Phone (required + format)
+if (!formData.phone.trim()) {
+  newErrors.phone = 'Phone is required';
+} else if (!/^[\d\s\-()]+$/.test(formData.phone)) {
+  newErrors.phone = 'Please enter a valid phone number';
+}
+
     if (!formData.currentPolicy) {
       newErrors.currentPolicy = 'Please select an option';
     }
@@ -137,12 +151,6 @@ const QuoteForm = () => {
         insurance_types: selectedInsuranceTypes || 'None selected',
         message: `New Quote Request from ${formData.name}\n\nContact Information:\n- Email: ${formData.email || 'Not provided'}\n- Phone: ${formData.phone || 'Not provided'}\n- Zip Code: ${formData.zipCode}\n\nCurrent Policy: ${formData.currentPolicy === 'yes' ? 'Yes' : 'No'}\nPreferred Contact: ${formData.contactMethod === 'email' ? 'Email' : 'Phone'}\n\nInsurance Types Requested:\n${selectedInsuranceTypes || 'None selected'}`,
       };
-
-      console.log('Form submitted! Sending email...');
-      console.log('Service ID:', emailConfig.serviceId);
-      console.log('Template ID:', emailConfig.templateId);
-      console.log('Public Key:', emailConfig.publicKey);
-      console.log('Template Params:', templateParams);
 
       // Send email using EmailJS
       await emailjs.send(
@@ -244,7 +252,7 @@ const QuoteForm = () => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">Email <span className="required">*</span></label>
                   <input
                     type="email"
                     id="email"
@@ -260,8 +268,9 @@ const QuoteForm = () => {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="phone">Phone</label>
+                  <label htmlFor="phone">Phone <span className="required">*</span></label>
                   <input
+                    required
                     type="tel"
                     id="phone"
                     name="phone"
